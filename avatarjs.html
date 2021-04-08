@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 0px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 50%;
+    display: block;
+  }
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+img {
+    border-radius: 50%;
+    width:50%;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  color: black;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.modal-content button {
+    background-color: gray;
+    color:  black;
+    text-align: center;
+    
+}
+/* The Close Button */
+.close {
+  color: black;
+  background-color: ;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Leadership Board</h2>
+
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Jane">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">View Details</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1 style="text-indent:50px;">Jane Doe</h1>
+    <p style="color:gray;text-indent:50px;">CEO And Founder</p>
+
+    <br>
+    <p><img src="https://www.w3schools.com/howto/img_avatar.png" alt="Jane" style="border-radius: 50%;width:30%;vertical-align: bottom;border-right-style: dotted;border-left-style: double;float: left;padding: 20px;"><h2><center>About Me</h2> <br>
+<br><center>T.H.E. Cat is an American action drama.<br> that aired on NBC Fridays from 9:30 p.m. to 10:00 p.m. during the 1966–1967 television season.[1]<br>
+Robert Loggia starred as the title character, Thomas Hewitt Edward Cat.[1] The series preceded the 1968–1970 ABC television series It Takes a Thief, which was also about a cat burglar who used his skills for good.<br>
+
+</p>
+<button type="button" onclick="window.open('', '_self', ''); window.close();">Discard</button>
+
+
+<br>
+
+
+        
+        </div>
+
+       </div>
+       
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Mike">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p> 
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="column">
+    <div class="card">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="John">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="John">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p> 
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Jane">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Mike">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="John">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p> 
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<h2> Clinical LeaderShip </h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Jane">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Mike">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="John">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="John">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p> 
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+
+
